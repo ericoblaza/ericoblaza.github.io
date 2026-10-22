@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="E-commerce website project">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#121820"/>
+      <stop offset="100%" stop-color="#1a2330"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#bg)"/>
+  <rect x="48" y="56" width="168" height="220" rx="16" fill="#0B0F14" stroke="rgba(148,163,184,0.2)"/>
+  <rect x="68" y="76" width="128" height="100" rx="12" fill="#1A2330"/>
+  <rect x="68" y="192" width="90" height="10" rx="5" fill="rgba(232,238,245,0.8)"/>
+  <rect x="68" y="212" width="60" height="10" rx="5" fill="#2DD4BF"/>
+  <rect x="236" y="56" width="168" height="220" rx="16" fill="#0B0F14" stroke="rgba(45,212,191,0.35)"/>
+  <rect x="256" y="76" width="128" height="100" rx="12" fill="#1A2330"/>
+  <rect x="256" y="192" width="90" height="10" rx="5" fill="rgba(232,238,245,0.8)"/>
+  <rect x="256" y="212" width="60" height="10" rx="5" fill="#2DD4BF"/>
+  <rect x="424" y="56" width="168" height="220" rx="16" fill="#0B0F14" stroke="rgba(148,163,184,0.2)"/>
+  <rect x="444" y="76" width="128" height="100" rx="12" fill="#1A2330"/>
+  <rect x="444" y="192" width="90" height="10" rx="5" fill="rgba(232,238,245,0.8)"/>
+  <rect x="444" y="212" width="60" height="10" rx="5" fill="#2DD4BF"/>
+  <rect x="48" y="296" width="544" height="14" rx="7" fill="rgba(45,212,191,0.15)"/>
+</svg>

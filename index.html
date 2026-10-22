@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erico Blaza | Aspiring Full-Stack Web Developer</title>
+  <meta name="description" content="Portfolio of Erico Blaza — BSIT student at the University of San Jose-Recoletos and aspiring full-stack web developer.">
+  <meta name="author" content="Erico Blaza">
+  <link rel="canonical" href="https://ericoblaza.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ericoblaza.github.io/">
+  <meta property="og:title" content="Erico Blaza | Aspiring Full-Stack Web Developer">
+  <meta property="og:description" content="Portfolio of Erico Blaza — BSIT student at the University of San Jose-Recoletos and aspiring full-stack web developer.">
+  <meta property="og:image" content="https://ericoblaza.github.io/assets/images/profile.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Erico Blaza | Aspiring Full-Stack Web Developer">
+  <meta name="twitter:description" content="Portfolio of Erico Blaza — BSIT student at the University of San Jose-Recoletos and aspiring full-stack web developer.">
+  <meta name="twitter:image" content="https://ericoblaza.github.io/assets/images/profile.jpg">
+
+  <!-- Prevent theme flash: light by default; remember dark/light if saved -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN (beginner-friendly; no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            sans: ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            ink: {
+              950: '#070A0E',
+              900: '#0B0F14',
+              800: '#121820',
+              700: '#1A2330',
+            },
+            accent: {
+              DEFAULT: '#2DD4BF',
+              dim: '#14B8A6',
+              soft: 'rgba(45, 212, 191, 0.12)',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/custom.css?v=1792685762">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body class="font-sans antialiased theme-body">
+  <a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <nav class="nav-shell glass" aria-label="Main navigation">
+    <a href="#home" class="nav-brand font-display text-lg font-bold tracking-tight">
+      Erico Blaza    </a>
+
+    <ul class="nav-desktop" role="list">
+              <li>
+          <a href="#about"
+             class="nav-link"
+             data-nav-link>
+            About          </a>
+        </li>
+              <li>
+          <a href="#skills"
+             class="nav-link"
+             data-nav-link>
+            Skills          </a>
+        </li>
+              <li>
+          <a href="#projects"
+             class="nav-link"
+             data-nav-link>
+            Projects          </a>
+        </li>
+              <li>
+          <a href="#education"
+             class="nav-link"
+             data-nav-link>
+            Education          </a>
+        </li>
+              <li>
+          <a href="#experience"
+             class="nav-link"
+             data-nav-link>
+            Experience          </a>
+        </li>
+              <li>
+          <a href="#services"
+             class="nav-link"
+             data-nav-link>
+            Services          </a>
+        </li>
+              <li>
+          <a href="#contact"
+             class="nav-link"
+             data-nav-link>
+            Contact          </a>
+        </li>
+          </ul>
+
+    <div class="nav-actions">
+      <button type="button"
+              id="theme-toggle"
+              class="icon-btn"
+              aria-label="Toggle color theme"
+              title="Toggle theme">
+        <span class="theme-icon theme-icon-dark" aria-hidden="true">
+          <!-- sun -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </span>
+        <span class="theme-icon theme-icon-light" aria-hidden="true">
+          <!-- moon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </span>
+      </button>
+
+      <button type="button"
+              id="nav-toggle"
+              class="icon-btn nav-burger"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="Open menu">
+        <span class="burger-lines" aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu glass" hidden>
+    <ul role="list">
+              <li>
+          <a href="#about"
+             class="mobile-link"
+             data-nav-link>
+            About          </a>
+        </li>
+              <li>
+          <a href="#skills"
+             class="mobile-link"
+             data-nav-link>
+            Skills          </a>
+        </li>
+              <li>
+          <a href="#projects"
+             class="mobile-link"
+             data-nav-link>
+            Projects          </a>
+        </li>
+              <li>
+          <a href="#education"
+             class="mobile-link"
+             data-nav-link>
+            Education          </a>
+        </li>
+              <li>
+          <a href="#experience"
+             class="mobile-link"
+             data-nav-link>
+            Experience          </a>
+        </li>
+              <li>
+          <a href="#services"
+             class="mobile-link"
+             data-nav-link>
+            Services          </a>
+        </li>
+              <li>
+          <a href="#contact"
+             class="mobile-link"
+             data-nav-link>
+            Contact          </a>
+        </li>
+          </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero" aria-label="Introduction">
+    <div class="hero-mesh" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="reveal">
+        <p class="hero-kicker">Aspiring Full-Stack Web Developer</p>
+        <h1 class="hero-name">Erico Blaza</h1>
+        <p class="hero-title">Learning by building — frontend to PHP backends.</p>
+        <p class="hero-intro">Building clean, useful web applications with HTML, CSS, JavaScript, PHP, and MySQL.</p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/ericoblaza" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-portrait">
+          <img src="/assets/images/profile.jpg"
+               alt="Portrait of Erico Blaza"
+               width="480"
+               height="600">
+        </div>
+        <div class="code-panel" aria-hidden="true">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <div class="code-lines">
+            <div><span class="c-dim">// portfolio.php</span></div>
+            <div><span class="c-accent">$developer</span> <span class="c-soft">=</span> [</div>
+            <div>&nbsp;&nbsp;<span class="c-soft">'role'</span> <span class="c-dim">=></span> <span class="c-accent">'full-stack'</span>,</div>
+            <div>&nbsp;&nbsp;<span class="c-soft">'stack'</span> <span class="c-dim">=></span> [<span class="c-accent">'PHP'</span>, <span class="c-accent">'MySQL'</span>, <span class="c-accent">'JS'</span>],</div>
+            <div>&nbsp;&nbsp;<span class="c-soft">'status'</span> <span class="c-dim">=></span> <span class="c-accent">'learning &amp; shipping'</span>,</div>
+            <div>];</div>
+            <div class="c-dim">echo build_something_useful();</div>
+          </div>
+        </div>
+        <div class="orbit-ring" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <p class="section-kicker reveal">About</p>
+      <h2 class="section-title reveal">About me</h2>
+      <p class="section-lead reveal">BSIT student in Cebu, building toward a career in full-stack web development.</p>
+
+      <div class="about-grid">
+        <div class="stat-row reveal">
+          <div class="stat-pill">
+            <strong>Junior / aspiring</strong>
+            <span>Honest about where I am — focused on growth.</span>
+          </div>
+          <div class="stat-pill">
+            <strong>Full-stack path</strong>
+            <span>Frontend craft + PHP &amp; MySQL backends.</span>
+          </div>
+          <div class="stat-pill">
+            <strong>Open to work</strong>
+            <span>Internships, junior roles, and practice projects.</span>
+          </div>
+        </div>
+
+        <article class="about-card reveal">
+                      <p>I am Erico Blaza, a Bachelor of Science in Information Technology (BSIT) student at the University of San Jose-Recoletos in Cebu, Philippines. I am an aspiring full-stack web developer focused on building useful, well-structured websites and web applications.</p>
+                      <p>I enjoy learning by shipping small projects — from clean landing pages to PHP apps that work with a MySQL database. I am still early in my career, and I treat that as a strength: I ask questions, practice often, and care about writing code I can explain.</p>
+                      <p>Right now I am deepening my skills in frontend fundamentals and PHP backends, and I am open to internships, junior roles, and collaborative projects where I can contribute and keep learning.</p>
+                  </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section" style="padding-top: 0;">
+    <div class="section-inner">
+      <p class="section-kicker reveal">Skills</p>
+      <h2 class="section-title reveal">What I am learning &amp; using</h2>
+      <p class="section-lead reveal">Grouped by area. Add new tools anytime in <code>config/content.php</code>.</p>
+
+      <div class="skills-bento">
+                  <div class="skill-panel reveal">
+            <h3>Frontend</h3>
+            <ul class="skill-list">
+                              <li class="skill-item">
+                  <strong>HTML5</strong>
+                  <span>Semantic structure &amp; accessibility</span>
+                </li>
+                              <li class="skill-item">
+                  <strong>CSS3</strong>
+                  <span>Layouts, responsive design</span>
+                </li>
+                              <li class="skill-item">
+                  <strong>JavaScript</strong>
+                  <span>DOM, events, small UI features</span>
+                </li>
+                              <li class="skill-item">
+                  <strong>Bootstrap</strong>
+                  <span>Component-based layouts</span>
+                </li>
+                              <li class="skill-item">
+                  <strong>Tailwind CSS</strong>
+                  <span>Utility-first styling</span>
+                </li>
+                          </ul>
+          </div>
+                  <div class="skill-panel reveal">
+            <h3>Backend</h3>
+            <ul class="skill-list">
+                              <li class="skill-item">
+                  <strong>PHP</strong>
+                  <span>Server-side pages &amp; forms</span>
+                </li>
+                              <li class="skill-item">
+                  <strong>MySQL</strong>
+                  <span>Relational data &amp; queries</span>
+                </li>
+                              <li class="skill-item">
+                  <strong>REST APIs</strong>
+                  <span>Consuming &amp; structuring endpoints</span>
+                </li>
+                          </ul>
+          </div>
+                  <div class="skill-panel reveal">
+            <h3>Tools</h3>
+            <ul class="skill-list">
+                              <li class="skill-item">
+                  <strong>Git</strong>
+                  <span>Version control basics</span>
+                </li>
+                              <li class="skill-item">
+                  <strong>GitHub</strong>
+                  <span>Repos, Pages, collaboration</span>
+                </li>
+                              <li class="skill-item">
+                  <strong>VS Code</strong>
+                  <span>Daily editor &amp; debugging</span>
+                </li>
+                          </ul>
+          </div>
+              </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="section-kicker reveal">Projects</p>
+      <h2 class="section-title reveal">Selected work</h2>
+      <p class="section-lead reveal">Selected builds from school and independent practice — including a capstone booking platform and a college search app.</p>
+
+      
+              <article class="project-featured reveal">
+          <div class="project-media">
+            <img src="/assets/images/projects/performhub.png"
+                 alt="PerformHub cover"
+                 width="960"
+                 height="540"
+                 loading="lazy">
+          </div>
+          <div class="project-body">
+            <p class="project-label">Featured project</p>
+            <h3>PerformHub</h3>
+            <p>Capstone web platform connecting performers and event organizers for talent discovery, auditions, and booking. Includes multi-role auth, performer portfolios, booking requests, contracts, and Jitsi interviews.</p>
+            <ul class="tech-row">
+                              <li>Laravel</li>
+                              <li>PHP</li>
+                              <li>MySQL</li>
+                              <li>Bootstrap</li>
+                              <li>Jitsi Meet</li>
+                          </ul>
+            <div class="project-actions">
+                              <a class="btn btn-ghost btn-sm" href="https://github.com/migs-enri21/PerformHub-Capstone" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                        </div>
+          </div>
+        </article>
+      
+              <div class="project-grid">
+                      <article class="project-card reveal">
+              <div class="project-media">
+                <img src="/assets/images/projects/schoolfinder.png"
+                     alt="SchoolFinder Philippines cover"
+                     width="960"
+                     height="540"
+                     loading="lazy">
+              </div>
+              <div class="project-body">
+                <h3>SchoolFinder Philippines</h3>
+                <p>Laravel app that helps Filipino students find colleges by location and program, with transparent program-specific ranking, maps, and labeled data sources — not a government ranking site.</p>
+                <ul class="tech-row">
+                                      <li>Laravel</li>
+                                      <li>PHP</li>
+                                      <li>Tailwind CSS</li>
+                                      <li>Alpine.js</li>
+                                      <li>Leaflet</li>
+                                  </ul>
+                <div class="project-actions">
+                                      <a class="btn btn-ghost btn-sm" href="https://github.com/ericoblaza/schoolfinder-philippines" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                                    </div>
+              </div>
+            </article>
+                  </div>
+          </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section" style="padding-top: 0;">
+    <div class="section-inner">
+      <p class="section-kicker reveal">Education</p>
+      <h2 class="section-title reveal">Learning path</h2>
+      <p class="section-lead reveal">Formal study and continuous online learning.</p>
+
+      <div class="timeline">
+                  <article class="timeline-item reveal">
+            <p class="period">Cebu, Philippines</p>
+            <h3>University of San Jose-Recoletos</h3>
+            <p class="meta">Bachelor of Science in Information Technology (BSIT)</p>
+            <p>Studying information technology with a focus on web development, databases, and building practical software skills.</p>
+          </article>
+              </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <p class="section-kicker reveal">Experience</p>
+      <h2 class="section-title reveal">How I am building experience</h2>
+      <p class="section-lead reveal">I am early in my career, so this section highlights practice — not invented job titles.</p>
+
+      <div class="exp-grid">
+                  <article class="exp-card reveal">
+            <p class="exp-type">Personal projects</p>
+            <h3>Independent practice builds</h3>
+            <p class="period">Ongoing</p>
+            <p>Landing pages, small PHP apps, and UI experiments that help me practice structure, styling, and problem-solving.</p>
+          </article>
+                  <article class="exp-card reveal">
+            <p class="exp-type">School projects</p>
+            <h3>Academic web assignments</h3>
+            <p class="period">During studies</p>
+            <p>Class projects involving forms, databases, and responsive layouts under deadlines and requirements.</p>
+          </article>
+                  <article class="exp-card reveal">
+            <p class="exp-type">Freelance / practice</p>
+            <h3>Open to small client practice work</h3>
+            <p class="period">Available</p>
+            <p>Interested in simple business sites and school-related builds where I can deliver carefully and communicate clearly.</p>
+          </article>
+                  <article class="exp-card reveal">
+            <p class="exp-type">Development practice</p>
+            <h3>GitHub-driven learning</h3>
+            <p class="period">Ongoing</p>
+            <p>Version control, readable commits, and documenting projects so others (and future me) can follow the work.</p>
+          </article>
+              </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section" style="padding-top: 0;">
+    <div class="section-inner">
+      <p class="section-kicker reveal">Services</p>
+      <h2 class="section-title reveal">What I can help with</h2>
+      <p class="section-lead reveal">As a junior developer, I take on clear, focused scopes and communicate honestly about timelines.</p>
+
+      <div class="services-grid">
+                  <article class="service-card reveal">
+            <p class="service-index">01</p>
+            <h3>Website Development</h3>
+            <p>Simple, clean websites built with modern HTML, CSS, and JavaScript — focused on clarity and mobile usability.</p>
+          </article>
+                  <article class="service-card reveal">
+            <p class="service-index">02</p>
+            <h3>Business Websites</h3>
+            <p>Multi-section sites for local businesses: about, services, and contact — beginner-friendly scope done carefully.</p>
+          </article>
+                  <article class="service-card reveal">
+            <p class="service-index">03</p>
+            <h3>Responsive Web Design</h3>
+            <p>Layouts that adapt from phone to desktop so your content stays readable everywhere.</p>
+          </article>
+                  <article class="service-card reveal">
+            <p class="service-index">04</p>
+            <h3>PHP Web Applications</h3>
+            <p>Small server-side apps with forms and MySQL — great for school tools, listings, and contact systems.</p>
+          </article>
+                  <article class="service-card reveal">
+            <p class="service-index">05</p>
+            <h3>Website Maintenance</h3>
+            <p>Updates, small fixes, and content changes on existing static or PHP sites as I continue to grow.</p>
+          </article>
+              </div>
+
+      <p class="services-note reveal">
+        Looking for mentorship-friendly collaboration or a straightforward small site?
+        Reach out — I would rather under-promise and deliver carefully than overclaim expertise.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <p class="section-kicker reveal">Contact</p>
+      <h2 class="section-title reveal">Let’s talk</h2>
+      <p class="section-lead reveal">Open to internships, junior roles, feedback, and small practice projects.</p>
+
+            
+      <div class="contact-grid">
+        <aside class="contact-aside reveal">
+          <h3>Get in touch</h3>
+          <p>Prefer email or LinkedIn? Use the form or the links below — I read every message.</p>
+          <ul class="contact-meta">
+            <li>
+              <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/ericoblaza" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+            </li>
+          </ul>
+        </aside>
+
+        <form class="contact-form reveal" action="#contact" data-static-contact="1" method="post" novalidate>
+          <!-- Honeypot: leave empty (bots often fill hidden fields) -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required maxlength="120"
+                   value=""
+                   autocomplete="name">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required maxlength="180"
+                   value=""
+                   autocomplete="email">
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required maxlength="200"
+                   value="">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required maxlength="5000"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-grid">
+    <div>
+      <p class="font-display text-xl font-bold">Erico Blaza</p>
+      <p class="footer-muted mt-1">Aspiring Full-Stack Web Developer</p>
+    </div>
+
+    <ul class="footer-links" role="list">
+      <li>
+        <a href="https://github.com/ericoblaza"
+           target="_blank" rel="noopener noreferrer">GitHub</a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/"
+           target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </li>
+      <li>
+        <a href="mailto:your.email@example.com">
+          your.email@example.com        </a>
+      </li>
+    </ul>
+
+    <p class="footer-copy">
+      &copy; 2026 Erico Blaza.
+      Built with PHP, MySQL, HTML, CSS &amp; JavaScript.
+    </p>
+  </div>
+</footer>
+
+<button type="button" id="to-top" class="to-top" aria-label="Scroll to top" hidden>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+<script src="/assets/js/main.js" defer></script>
+<script>
+document.querySelector("form[data-static-contact]")?.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var f = e.target;
+  var body = "Name: " + f.name.value + "\nEmail: " + f.email.value + "\n\n" + f.message.value;
+  window.location.href = "mailto:your.email@example.com?subject=" + encodeURIComponent(f.subject.value) + "&body=" + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>

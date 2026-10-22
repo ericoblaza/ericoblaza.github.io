@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="PerformHub project">
+  <defs>
+    <linearGradient id="ph-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#121820"/>
+      <stop offset="100%" stop-color="#1a2330"/>
+    </linearGradient>
+    <radialGradient id="ph-spot" cx="50%" cy="18%" r="70%">
+      <stop offset="0%" stop-color="rgba(45,212,191,0.22)"/>
+      <stop offset="100%" stop-color="rgba(45,212,191,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#ph-bg)"/>
+  <rect width="640" height="360" rx="24" fill="url(#ph-spot)"/>
+  <rect x="48" y="48" width="168" height="264" rx="16" fill="#0B0F14" stroke="rgba(45,212,191,0.35)"/>
+  <circle cx="132" cy="118" r="32" fill="rgba(45,212,191,0.18)" stroke="#2DD4BF"/>
+  <rect x="72" y="168" width="120" height="12" rx="6" fill="#E8EEF5" opacity="0.85"/>
+  <rect x="84" y="190" width="96" height="8" rx="4" fill="rgba(148,163,184,0.4)"/>
+  <rect x="72" y="220" width="56" height="22" rx="11" fill="#2DD4BF"/>
+  <rect x="136" y="220" width="56" height="22" rx="11" fill="#1A2330" stroke="rgba(148,163,184,0.3)"/>
+  <rect x="236" y="48" width="168" height="264" rx="16" fill="#0B0F14" stroke="rgba(148,163,184,0.2)"/>
+  <circle cx="320" cy="118" r="32" fill="rgba(56,189,248,0.16)" stroke="#38BDF8"/>
+  <rect x="260" y="168" width="120" height="12" rx="6" fill="#E8EEF5" opacity="0.75"/>
+  <rect x="272" y="190" width="96" height="8" rx="4" fill="rgba(148,163,184,0.35)"/>
+  <rect x="260" y="220" width="120" height="22" rx="11" fill="#1A2330"/>
+  <rect x="424" y="48" width="168" height="264" rx="16" fill="#0B0F14" stroke="rgba(148,163,184,0.2)"/>
+  <circle cx="508" cy="118" r="32" fill="rgba(148,163,184,0.18)" stroke="#94A3B8"/>
+  <rect x="448" y="168" width="120" height="12" rx="6" fill="#E8EEF5" opacity="0.7"/>
+  <rect x="460" y="190" width="96" height="8" rx="4" fill="rgba(148,163,184,0.3)"/>
+  <rect x="448" y="220" width="120" height="22" rx="11" fill="#1A2330"/>
+</svg>
