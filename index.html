@@ -356,7 +356,7 @@
     <div class="section-inner">
       <p class="section-kicker reveal">Projects</p>
       <h2 class="section-title reveal">Selected work</h2>
-      <p class="section-lead reveal">Selected builds from school and independent practice — including a capstone booking platform and a college search app.</p>
+      <p class="section-lead reveal">Selected builds from school and independent practice — including a capstone booking platform, a college search app, and a camera-based medicine recognizer.</p>
 
       
               <article class="project-featured reveal">
@@ -405,6 +405,28 @@
                                   </ul>
                 <div class="project-actions">
                                       <a class="btn btn-ghost btn-sm" href="https://github.com/ericoblaza/schoolfinder-philippines" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                                    </div>
+              </div>
+            </article>
+                      <article class="project-card reveal">
+              <div class="project-media">
+                <img src="/assets/images/projects/medicine-recognition.png"
+                     alt="Medicine Recognition cover"
+                     width="960"
+                     height="540"
+                     loading="lazy">
+              </div>
+              <div class="project-body">
+                <h3>Medicine Recognition</h3>
+                <p>Camera web app that identifies common medicines from a photo using a Teachable Machine model, then shows the predicted name, confidence, definition, and common uses.</p>
+                <ul class="tech-row">
+                                      <li>Python</li>
+                                      <li>Flask</li>
+                                      <li>TensorFlow</li>
+                                      <li>JavaScript</li>
+                                  </ul>
+                <div class="project-actions">
+                                      <a class="btn btn-ghost btn-sm" href="https://github.com/ericoblaza/medicine_recognition" target="_blank" rel="noopener noreferrer">GitHub</a>
                                                     </div>
               </div>
             </article>
@@ -522,7 +544,7 @@
           <p>Prefer email or LinkedIn? Use the form or the links below — I read every message.</p>
           <ul class="contact-meta">
             <li>
-              <a href="mailto:your.email@example.com">your.email@example.com</a>
+              <a href="mailto:erico.blaza.dev@gmail.com">erico.blaza.dev@gmail.com</a>
             </li>
             <li>
               <a href="https://github.com/ericoblaza" target="_blank" rel="noopener noreferrer">GitHub profile</a>
@@ -533,7 +555,11 @@
           </ul>
         </aside>
 
-        <form class="contact-form reveal" action="#contact" data-static-contact="1" method="post" novalidate>
+        <form class="contact-form reveal" action="https://formsubmit.co/erico.blaza.dev@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from your portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://ericoblaza.github.io/#contact">
           <!-- Honeypot: leave empty (bots often fill hidden fields) -->
           <div class="hp-field" aria-hidden="true">
             <label for="website">Website</label>
@@ -590,8 +616,8 @@
            target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </li>
       <li>
-        <a href="mailto:your.email@example.com">
-          your.email@example.com        </a>
+        <a href="mailto:erico.blaza.dev@gmail.com">
+          erico.blaza.dev@gmail.com        </a>
       </li>
     </ul>
 
@@ -609,13 +635,5 @@
 </button>
 
 <script src="/assets/js/main.js" defer></script>
-<script>
-document.querySelector("form[data-static-contact]")?.addEventListener("submit", function (e) {
-  e.preventDefault();
-  var f = e.target;
-  var body = "Name: " + f.name.value + "\nEmail: " + f.email.value + "\n\n" + f.message.value;
-  window.location.href = "mailto:your.email@example.com?subject=" + encodeURIComponent(f.subject.value) + "&body=" + encodeURIComponent(body);
-});
-</script>
 </body>
 </html>
